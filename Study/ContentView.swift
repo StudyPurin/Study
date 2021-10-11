@@ -13,26 +13,40 @@ struct ContentView: View {
     @State var text = "Hello, World!"
     // test
     var body: some View {
-        ZStack{
-            NavigationView {
-                Text("nau")
-                    .navigationBarTitle("統計")
-                    .navigationBarItems(leading: (
-                        Button(action: {
-                            self.isOpenSideMenu.toggle()
-                        }) {
-                            Image(systemName: "line.horizontal.3")
-                                .imageScale(.large)
-                    }))
+        TabView {
+            FirstView().tabItem {
+                Text("Command")
+                Image(systemName: "command")
             }
-            SideMenuView(isOpen: $isOpenSideMenu, num: num)
-                .edgesIgnoringSafeArea(.all)
-            if num == 0 {
-                TimerView()
+            SecondView().tabItem {
+                Text("Shift")
+                Image(systemName: "shift")
             }
-                
+            ThirdView().tabItem {
+                Text("Option")
+                Image(systemName: "option")
+            }
         }
     }
+}
+
+struct FirstView: View {
+    var body: some View {
+        Text("タブメニュー１の画面")
+    }
+}
+
+struct SecondView: View {
+    var body: some View {
+        Text("タブメニュー２の画面")
+    }
+}
+
+struct ThirdView: View {
+    var body: some View {
+        Text("タブメニュー３の画面")
+    }
+}
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
