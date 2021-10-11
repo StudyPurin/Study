@@ -11,7 +11,6 @@ struct ContentView: View {
     @State var isOpenSideMenu: Bool = false
     @State var num: Int = 0
     @State var text = "Hello, World!"
-    // test
     var body: some View {
         TabView {
             FirstView().tabItem {
