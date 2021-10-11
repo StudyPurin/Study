@@ -26,6 +26,10 @@ struct ContentView: View {
             }
             SideMenuView(isOpen: $isOpenSideMenu, num: num)
                 .edgesIgnoringSafeArea(.all)
+            if num == 0 {
+                TimerView()
+            }
+                
         }
     }
     struct ContentView_Previews: PreviewProvider {

@@ -11,7 +11,7 @@ struct SideMenuView: View {
     @Binding var isOpen: Bool
     @State var num: Int
     let width: CGFloat = 270
-
+    
     var body: some View {
         ZStack {
             GeometryReader { geometry in
@@ -24,7 +24,7 @@ struct SideMenuView: View {
             .onTapGesture {
                 self.isOpen = false
             }
-
+            
             HStack {
                 VStack() {
                     SideMenuContentView(topPadding: 100, systemName: "books.vertical", text: "統計", isOpen: $isOpen, num: 0)
@@ -49,8 +49,9 @@ struct SideMenuContentView: View {
     let text: String
     @Binding var isOpen: Bool
     @State var num: Int
-
+    
     var body: some View {
+        
         HStack {
             Image(systemName: systemName)
                 .foregroundColor(.gray)
@@ -64,16 +65,7 @@ struct SideMenuContentView: View {
         .padding(.top, topPadding)
         .padding(.leading, 32)
         .onTapGesture {
-            if (num == 0){
-                DataView()
-            } else if (num == 1) {
-                RecordView()
-            } else {
-                TimerView()
-            }
             self.isOpen = false
         }
     }
 }
-
-
