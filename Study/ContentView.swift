@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isOpenSideMenu: Bool = false
+    @State var num: Int = 0
     @State var text = "Hello, World!"
     var body: some View {
         ZStack{
             NavigationView {
-                Text(text)
-                    .navigationBarTitle("メイン画面")
+                Text("nau")
+                    .navigationBarTitle("統計")
                     .navigationBarItems(leading: (
                         Button(action: {
                             self.isOpenSideMenu.toggle()
@@ -23,8 +24,7 @@ struct ContentView: View {
                                 .imageScale(.large)
                     }))
             }
-
-            SideMenuView(isOpen: $isOpenSideMenu)
+            SideMenuView(isOpen: $isOpenSideMenu, num: num)
                 .edgesIgnoringSafeArea(.all)
         }
     }

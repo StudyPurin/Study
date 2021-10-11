@@ -9,8 +9,9 @@ import SwiftUI
 
 struct SideMenuView: View {
     @Binding var isOpen: Bool
+    @State var num: Int
     let width: CGFloat = 270
-    
+
     var body: some View {
         ZStack {
             GeometryReader { geometry in
@@ -23,12 +24,12 @@ struct SideMenuView: View {
             .onTapGesture {
                 self.isOpen = false
             }
-            
+
             HStack {
                 VStack() {
-                    SideMenuContentView(topPadding: 100, systemName: "books.vertical", text: "統計", isOpen: $isOpen)
-                    SideMenuContentView(systemName: "pencil", text: "記録",  isOpen: $isOpen)
-                    SideMenuContentView(systemName: "timer", text: "タイマー", isOpen: $isOpen)
+                    SideMenuContentView(topPadding: 100, systemName: "books.vertical", text: "統計", isOpen: $isOpen, num: 0)
+                    SideMenuContentView(systemName: "pencil", text: "記録",  isOpen: $isOpen, num: 1)
+                    SideMenuContentView(systemName: "timer", text: "タイマー", isOpen: $isOpen, num: 2)
                     Spacer()
                 }
                 .frame(width: width)
@@ -47,15 +48,16 @@ struct SideMenuContentView: View {
     let systemName: String
     let text: String
     @Binding var isOpen: Bool
-    @State var num = 0;
-    
-    init(topPadding: CGFloat = 30, systemName: String, text: String, isOpen: Binding<Bool>) {
+    @State var num: Int
+
+    init(topPadding: CGFloat = 30, systemName: String, text: String, isOpen: Binding<Bool>, num: Int) {
         self.topPadding = topPadding
         self.systemName = systemName
         self._isOpen = isOpen
         self.text = text
+        self.num = num
     }
-    
+
     var body: some View {
         HStack {
             Image(systemName: systemName)
@@ -70,10 +72,14 @@ struct SideMenuContentView: View {
         .padding(.top, topPadding)
         .padding(.leading, 32)
         .onTapGesture {
+            if (self.num == 0){
+                
+            } else if (self.num == 2) {
+                
+            }
             self.isOpen = false
         }
     }
 }
-
 
 
