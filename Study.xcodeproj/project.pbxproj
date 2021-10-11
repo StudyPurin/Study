@@ -46,7 +46,6 @@
 			children = (
 				7F408431270AC73C00AC9324 /* Study */,
 				7F408430270AC73C00AC9324 /* Products */,
-				7F408441270AC8FF00AC9324 /* Remotes */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,13 +79,6 @@
 				7F408439270AC74000AC9324 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7F408441270AC8FF00AC9324 /* Remotes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Remotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
