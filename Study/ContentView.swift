@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             NavigationView {
-                Text("nau")
+                Text("nu")
                     .navigationBarTitle("統計")
                     .navigationBarItems(leading: (
                         Button(action: {
@@ -27,7 +27,7 @@ struct ContentView: View {
             SideMenuView(isOpen: $isOpenSideMenu, num: num)
                 .edgesIgnoringSafeArea(.all)
             if num == 0 {
-                TimerView()
+                
             }
                 
         }
