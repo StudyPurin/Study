@@ -11,6 +11,7 @@
 		7F1C4C402714152400CCDCC0 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C3F2714152400CCDCC0 /* RecordView.swift */; };
 		7F1C4C4227141BCE00CCDCC0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C4127141BCE00CCDCC0 /* TimerView.swift */; };
 		7F1C4C4427141BDB00CCDCC0 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C4327141BDB00CCDCC0 /* DataView.swift */; };
+		7F1C4C462714257800CCDCC0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C452714257800CCDCC0 /* SettingView.swift */; };
 		7F408433270AC73C00AC9324 /* StudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F408432270AC73C00AC9324 /* StudyApp.swift */; };
 		7F408435270AC73C00AC9324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F408434270AC73C00AC9324 /* ContentView.swift */; };
 		7F408437270AC74000AC9324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F408436270AC74000AC9324 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		7F1C4C3F2714152400CCDCC0 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		7F1C4C4127141BCE00CCDCC0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		7F1C4C4327141BDB00CCDCC0 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		7F1C4C452714257800CCDCC0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		7F40842F270AC73C00AC9324 /* Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F408432270AC73C00AC9324 /* StudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyApp.swift; sourceTree = "<group>"; };
 		7F408434270AC73C00AC9324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				7F1C4C4327141BDB00CCDCC0 /* DataView.swift */,
 				7F1C4C3F2714152400CCDCC0 /* RecordView.swift */,
 				7F1C4C4127141BCE00CCDCC0 /* TimerView.swift */,
+				7F1C4C452714257800CCDCC0 /* SettingView.swift */,
 				7F408436270AC74000AC9324 /* Assets.xcassets */,
 				7F40843B270AC74000AC9324 /* Info.plist */,
 				7F408438270AC74000AC9324 /* Preview Content */,
@@ -153,6 +156,7 @@
 				7F1C4C4427141BDB00CCDCC0 /* DataView.swift in Sources */,
 				7F1C4C4227141BCE00CCDCC0 /* TimerView.swift in Sources */,
 				7F1C4C3E2713DD1200CCDCC0 /* SideMenuContentView.swift in Sources */,
+				7F1C4C462714257800CCDCC0 /* SettingView.swift in Sources */,
 				7F408435270AC73C00AC9324 /* ContentView.swift in Sources */,
 				7F1C4C402714152400CCDCC0 /* RecordView.swift in Sources */,
 				7F408433270AC73C00AC9324 /* StudyApp.swift in Sources */,
