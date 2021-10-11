@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var num: Int = 0
     @State var text = "Hello, World!"
     var body: some View {
+<<<<<<< HEAD
         ZStack{
             NavigationView {
                 Text("nu")
@@ -28,10 +29,42 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             if num == 0 {
                 
+=======
+        TabView {
+            FirstView().tabItem {
+                Text("Command")
+                Image(systemName: "command")
             }
-                
+            SecondView().tabItem {
+                Text("Shift")
+                Image(systemName: "shift")
+            }
+            ThirdView().tabItem {
+                Text("Option")
+                Image(systemName: "option")
+>>>>>>> 2b1251eb3086cafebfb9ffc62d8ead5b8075be7c
+            }
         }
     }
+}
+
+struct FirstView: View {
+    var body: some View {
+        Text("タブメニュー１の画面")
+    }
+}
+
+struct SecondView: View {
+    var body: some View {
+        Text("タブメニュー２の画面")
+    }
+}
+
+struct ThirdView: View {
+    var body: some View {
+        Text("タブメニュー３の画面")
+    }
+}
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
