@@ -8,28 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isOpenSideMenu: Bool = false
-    @State var num: Int = 0
-    @State var text = "Hello, World!"
     var body: some View {
-<<<<<<< HEAD
-        ZStack{
-            NavigationView {
-                Text("nu")
-                    .navigationBarTitle("統計")
-                    .navigationBarItems(leading: (
-                        Button(action: {
-                            self.isOpenSideMenu.toggle()
-                        }) {
-                            Image(systemName: "line.horizontal.3")
-                                .imageScale(.large)
-                    }))
-            }
-            SideMenuView(isOpen: $isOpenSideMenu, num: num)
-                .edgesIgnoringSafeArea(.all)
-            if num == 0 {
-                
-=======
         TabView {
             FirstView().tabItem {
                 Text("Command")
@@ -42,7 +21,6 @@ struct ContentView: View {
             ThirdView().tabItem {
                 Text("Option")
                 Image(systemName: "option")
->>>>>>> 2b1251eb3086cafebfb9ffc62d8ead5b8075be7c
             }
         }
     }
@@ -70,4 +48,4 @@ struct ThirdView: View {
             ContentView()
         }
     }
-}
+
