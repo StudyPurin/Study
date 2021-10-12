@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+<<<<<<< HEAD
 
+=======
+    @State var isOpenSideMenu: Bool = false
+    @State var num: Int = 0
+    @State var text = "Hello, World!"
+>>>>>>> 2b1251e (commitTest)
     var body: some View {
             TabView {
                 FirstView().tabItem {
