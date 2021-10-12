@@ -11,16 +11,20 @@ struct ContentView: View {
     var body: some View {
         TabView {
             FirstView().tabItem {
-                Text("Command")
-                Image(systemName: "command")
+                Text("統計")
+                Image(systemName: "books.vertical")
             }
             SecondView().tabItem {
-                Text("Shift")
-                Image(systemName: "shift")
+                Text("記録")
+                Image(systemName: "pencil")
             }
             ThirdView().tabItem {
-                Text("Option")
-                Image(systemName: "option")
+                Text("タイマー")
+                Image(systemName: "timer")
+            }
+            FouthView().tabItem {
+                Text("設定")
+                Image(systemName: "gear")
             }
         }
     }
@@ -40,7 +44,13 @@ struct SecondView: View {
 
 struct ThirdView: View {
     var body: some View {
-        Text("タブメニュー３の画面")
+        TimerView()
+    }
+}
+
+struct FouthView: View {
+    var body: some View {
+        Text("設定")
     }
 }
     struct ContentView_Previews: PreviewProvider {
