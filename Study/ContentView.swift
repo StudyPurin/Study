@@ -8,66 +8,59 @@
 import SwiftUI
 
 struct ContentView: View {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    @State var isOpenSideMenu: Bool = false
-    @State var num: Int = 0
-    @State var text = "Hello, World!"
->>>>>>> 2b1251e (commitTest)
-    var body: some View {
-            TabView {
-                FirstView().tabItem {
-                    Text("Command")
-                    Image(systemName: "command")
-                }
-                SecondView().tabItem {
-                    Text("Shift")
-                    Image(systemName: "shift")
-                }
-                ThirdView().tabItem {
-                    Text("Option")
-                    Image(systemName: "option")
-                }
-=======
     var body: some View {
         TabView {
             FirstView().tabItem {
-                Text("Command")
-                Image(systemName: "command")
+                Text("統計")
+                Image(systemName: "books.vertical")
             }
             SecondView().tabItem {
-                Text("Shift")
-                Image(systemName: "shift")
+                Text("記録")
+                Image(systemName: "pencil")
             }
             ThirdView().tabItem {
+                
                 Text("Option")
                 Image(systemName: "option")
->>>>>>> 19b6dfe (test)
+                
+                Text("タイマー")
+                Image(systemName: "timer")
+            }
+            FouthView().tabItem {
+                Text("設定")
+                Image(systemName: "gear")
+                
             }
         }
-
-struct FirstView: View {
-    var body: some View {
-        Text("タブメニュー１の画面")
     }
-}
-
-struct SecondView: View {
-    var body: some View {
-        Text("タブメニュー２の画面")
+    struct FirstView: View {
+        var body: some View {
+            Text("タブメニュー１の画面")
+        }
     }
-}
-
-struct ThirdView: View {
-    var body: some View {
-        Text("タブメニュー３の画面")
+    
+    struct SecondView: View {
+        var body: some View {
+            Text("タブメニュー２の画面")
+        }
     }
-}
+    
+    struct ThirdView: View {
+        var body: some View {
+            TimerView()
+        }
+    }
+    
+    struct FouthView: View {
+        var body: some View {
+            Text("設定")
+        }
+    }
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
+    
+}
 
