@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             FirstView().tabItem {
+<<<<<<< HEAD
                 Text("統計")
                 Image(systemName: "books.vertical")
             }
@@ -54,13 +55,48 @@ struct ContentView: View {
     struct FouthView: View {
         var body: some View {
             Text("設定")
+=======
+                Text("Command")
+                Image(systemName: "command")
+            }
+            SecondView().tabItem {
+                Text("Shift")
+                Image(systemName: "shift")
+            }
+            ThirdView().tabItem {
+                Text("Option")
+                Image(systemName: "option")
+            }
+>>>>>>> 50b099f6dcc32673424fa4cafeffed2d8b4795bc
         }
     }
+}
+
+struct FirstView: View {
+    var body: some View {
+        Text("タブメニュー１の画面")
+    }
+}
+
+struct SecondView: View {
+    var body: some View {
+        Text("タブメニュー２の画面")
+    }
+}
+
+struct ThirdView: View {
+    var body: some View {
+        Text("タブメニュー３の画面")
+    }
+}
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
+<<<<<<< HEAD
     
 }
+=======
+>>>>>>> 50b099f6dcc32673424fa4cafeffed2d8b4795bc
 
