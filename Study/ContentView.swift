@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     @State var isOpenSideMenu: Bool = false
@@ -29,6 +30,21 @@ struct ContentView: View {
                     Text("Option")
                     Image(systemName: "option")
                 }
+=======
+    var body: some View {
+        TabView {
+            FirstView().tabItem {
+                Text("Command")
+                Image(systemName: "command")
+            }
+            SecondView().tabItem {
+                Text("Shift")
+                Image(systemName: "shift")
+            }
+            ThirdView().tabItem {
+                Text("Option")
+                Image(systemName: "option")
+>>>>>>> 19b6dfe (test)
             }
         }
 
@@ -54,4 +70,4 @@ struct ThirdView: View {
             ContentView()
         }
     }
-}
+
