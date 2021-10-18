@@ -10,5 +10,7 @@
 			<integer>3</integer>
 		</dict>
 	</dict>
+	<key>PreviewsEnabled</key>
+	<false/>
 </dict>
 </plist>
