@@ -8,95 +8,70 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var tabSelection: Int = 0
     var body: some View {
-        TabView {
+        TabView(selection: $tabSelection) {
             FirstView().tabItem {
-<<<<<<< HEAD
                 Text("統計")
                 Image(systemName: "books.vertical")
             }
-            SecondView().tabItem {
+            .tag(0)
+            SecondView(tabSelection: $tabSelection).tabItem {
                 Text("記録")
                 Image(systemName: "pencil")
             }
-            ThirdView().tabItem {
-                
-                Text("Option")
-                Image(systemName: "option")
-                
+            .tag(1)
+            ThirdView(tabSelection: $tabSelection).tabItem {
                 Text("タイマー")
                 Image(systemName: "timer")
             }
+            .tag(2)
             FouthView().tabItem {
                 Text("設定")
                 Image(systemName: "gear")
-                
             }
         }
     }
+}
+
     struct FirstView: View {
         var body: some View {
-            Text("タブメニュー１の画面")
+            DataView()
         }
     }
     
     struct SecondView: View {
+        @Binding var tabSelection: Int
         var body: some View {
-            Text("タブメニュー２の画面")
+            SubjectView()
         }
     }
     
     struct ThirdView: View {
+        @Binding var tabSelection: Int
         var body: some View {
-            TimerView()
+            VStack {
+                
+                MainView()
+                Button {
+                    tabSelection = 1
+                    
+                } label: {
+                    Text("タイマーから記録する")
+                }
+            }
+           
         }
     }
     
     struct FouthView: View {
         var body: some View {
-            Text("設定")
-=======
-                Text("Command")
-                Image(systemName: "command")
-            }
-            SecondView().tabItem {
-                Text("Shift")
-                Image(systemName: "shift")
-            }
-            ThirdView().tabItem {
-                Text("Option")
-                Image(systemName: "option")
-            }
->>>>>>> 50b099f6dcc32673424fa4cafeffed2d8b4795bc
+            SettingView()
         }
-    }
-}
-
-struct FirstView: View {
-    var body: some View {
-        Text("タブメニュー１の画面")
-    }
-}
-
-struct SecondView: View {
-    var body: some View {
-        Text("タブメニュー２の画面")
-    }
-}
-
-struct ThirdView: View {
-    var body: some View {
-        Text("タブメニュー３の画面")
-    }
-}
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
-<<<<<<< HEAD
-    
 }
-=======
->>>>>>> 50b099f6dcc32673424fa4cafeffed2d8b4795bc
 
