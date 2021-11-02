@@ -10,6 +10,10 @@ import AudioToolbox
 
 struct MainView: View {
     @ObservedObject var timeManager: TimeManager = .shared
+    @Environment(\.scenePhase) private var scenePhase
+    var backgroundTaskID: UIBackgroundTaskIdentifier = UIBackgroundTaskIdentifier(rawValue: 0)
+    var backgroundTime = Date()
+    @State var backgroundTaskId = UIBackgroundTaskIdentifier.init(rawValue: 0)
     
     var body: some View {
         NavigationView{
@@ -36,6 +40,7 @@ struct MainView: View {
             }
             //指定した時間（1秒）ごとに発動するtimerをトリガーにしてクロージャ内のコードを実行
             .onReceive(timeManager.timer) { _ in
+                backgroundTaskId = UIApplication.shared.beginBackgroundTask(expirationHandler: nil)
                 //タイマーステータスが.running以外の場合何も実行しない
                 guard self.timeManager.timerStatus == .running else { return }
                 //残り時間が0より大きい場合
@@ -49,11 +54,12 @@ struct MainView: View {
                     //タイマーステータスを.stoppedに変更する
                     self.timeManager.timerStatus = .stopped
                     
-               
+                    
                     //アラーム音を鳴らす
                     AudioServicesPlayAlertSoundWithCompletion(self.timeManager.soundID, nil)
                     //バイブレーションを作動させる
                     AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {}
+                    UIApplication.shared.endBackgroundTask(backgroundTaskId)
                 }
             }
             .navigationBarTitle("タイマー")
@@ -63,6 +69,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-            MainView()
+        MainView()
     }
 }

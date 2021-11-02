@@ -3,26 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		765613334058C92F91D615A8 /* Pods_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1251C5A75036E8F9AF878225 /* Pods_Study.framework */; };
 		7F1C4C402714152400CCDCC0 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C3F2714152400CCDCC0 /* RecordView.swift */; };
 		7F1C4C4227141BCE00CCDCC0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C4127141BCE00CCDCC0 /* TimerView.swift */; };
 		7F1C4C4427141BDB00CCDCC0 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C4327141BDB00CCDCC0 /* DataView.swift */; };
+		7F23A5F02720F16C00877990 /* CloseKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23A5EF2720F16C00877990 /* CloseKeyboard.swift */; };
+		7F23A60A27229F5500877990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23A60927229F5500877990 /* SceneDelegate.swift */; };
 		7F408433270AC73C00AC9324 /* StudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F408432270AC73C00AC9324 /* StudyApp.swift */; };
 		7F408435270AC73C00AC9324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F408434270AC73C00AC9324 /* ContentView.swift */; };
 		7F408437270AC74000AC9324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F408436270AC74000AC9324 /* Assets.xcassets */; };
 		7F40843A270AC74000AC9324 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F408439270AC74000AC9324 /* Preview Assets.xcassets */; };
-		7F51A74E271D397700E32395 /* ItemDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A74D271D397700E32395 /* ItemDB.swift */; };
-		7F51A750271D457B00E32395 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A74F271D457B00E32395 /* Item.swift */; };
-		7F51A752271D459000E32395 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A751271D459000E32395 /* ItemStore.swift */; };
-		7F51A754271D480700E32395 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A753271D480700E32395 /* ItemListView.swift */; };
-		7F51A756271D4EDD00E32395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A755271D4EDD00E32395 /* SceneDelegate.swift */; };
-		7F51A758271D593800E32395 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A757271D593800E32395 /* ItemRowView.swift */; };
-		7F51A75A271D600B00E32395 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51A759271D600B00E32395 /* ItemView.swift */; };
-		7F737EDE27156786003D0BBF /* Qiita_Timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F737EDC27156786003D0BBF /* Qiita_Timer.xcdatamodeld */; };
+		7F737EDE27156786003D0BBF /* Timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F737EDC27156786003D0BBF /* Timer.xcdatamodeld */; };
 		7F737EE02716705B003D0BBF /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F737EDF2716705B003D0BBF /* SettingView.swift */; };
 		7F8187E527191F7100137133 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8187E427191F7100137133 /* SubjectView.swift */; };
 		7F8A0705271536190067DC01 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A0704271536190067DC01 /* ButtonsView.swift */; };
@@ -35,26 +29,19 @@
 		7F8A0719271537600067DC01 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A0718271537600067DC01 /* TimeManager.swift */; };
 		7F8A071B2715376D0067DC01 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A071A2715376D0067DC01 /* TimerManager.swift */; };
 		7F8A071D2715378E0067DC01 /* TimerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A071C2715378E0067DC01 /* TimerMainView.swift */; };
-		7FE7DD68271AF77200C1E2DD /* SubjectColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7DD67271AF77200C1E2DD /* SubjectColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1251C5A75036E8F9AF878225 /* Pods_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1C4C3F2714152400CCDCC0 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		7F1C4C4127141BCE00CCDCC0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		7F1C4C4327141BDB00CCDCC0 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		7F23A5EF2720F16C00877990 /* CloseKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseKeyboard.swift; sourceTree = "<group>"; };
+		7F23A60927229F5500877990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F40842F270AC73C00AC9324 /* Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F408432270AC73C00AC9324 /* StudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyApp.swift; sourceTree = "<group>"; };
 		7F408434270AC73C00AC9324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F408436270AC74000AC9324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F408439270AC74000AC9324 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7F51A74D271D397700E32395 /* ItemDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDB.swift; sourceTree = "<group>"; };
-		7F51A74F271D457B00E32395 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		7F51A751271D459000E32395 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
-		7F51A753271D480700E32395 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
-		7F51A755271D4EDD00E32395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F51A757271D593800E32395 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
-		7F51A759271D600B00E32395 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		7F737EDD27156786003D0BBF /* Qiita_Timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qiita_Timer.xcdatamodel; sourceTree = "<group>"; };
 		7F737EDF2716705B003D0BBF /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		7F8187E427191F7100137133 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
@@ -69,9 +56,6 @@
 		7F8A071A2715376D0067DC01 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		7F8A071C2715378E0067DC01 /* TimerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMainView.swift; sourceTree = "<group>"; };
 		7F8A072427155ECB0067DC01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist"; sourceTree = "<group>"; };
-		7FE7DD67271AF77200C1E2DD /* SubjectColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectColorView.swift; sourceTree = "<group>"; };
-		882D40AD4E4381A07BD5400B /* Pods-Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study.release.xcconfig"; path = "Target Support Files/Pods-Study/Pods-Study.release.xcconfig"; sourceTree = "<group>"; };
-		BE721E18ED27D288DF633F98 /* Pods-Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study.debug.xcconfig"; path = "Target Support Files/Pods-Study/Pods-Study.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,20 +63,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765613334058C92F91D615A8 /* Pods_Study.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3843487DB2A8E4676F28657A /* Pods */ = {
+		7F23A5F12720FC8000877990 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				BE721E18ED27D288DF633F98 /* Pods-Study.debug.xcconfig */,
-				882D40AD4E4381A07BD5400B /* Pods-Study.release.xcconfig */,
+				7F8A0704271536190067DC01 /* ButtonsView.swift */,
+				7F1C4C4127141BCE00CCDCC0 /* TimerView.swift */,
+				7F8A07062715364E0067DC01 /* Data.swift */,
+				7F8A07082715365D0067DC01 /* MainView.swift */,
+				7F8A070A271536760067DC01 /* Persistence.swift */,
+				7F8A070C271536810067DC01 /* PickerView.swift */,
+				7F8A070E271536920067DC01 /* ProgressBarView.swift */,
+				7F8A0716271537370067DC01 /* SoundListView.swift */,
+				7F8A0718271537600067DC01 /* TimeManager.swift */,
+				7F8A071A2715376D0067DC01 /* TimerManager.swift */,
+				7F8A071C2715378E0067DC01 /* TimerMainView.swift */,
+				7F23A60927229F5500877990 /* SceneDelegate.swift */,
 			);
-			path = Pods;
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		7F408426270AC73C00AC9324 = {
@@ -100,7 +93,6 @@
 			children = (
 				7F408431270AC73C00AC9324 /* Study */,
 				7F408430270AC73C00AC9324 /* Products */,
-				3843487DB2A8E4676F28657A /* Pods */,
 				CC884A2CC6A1686B951DBE2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -120,29 +112,12 @@
 				7F408434270AC73C00AC9324 /* ContentView.swift */,
 				7F1C4C4327141BDB00CCDCC0 /* DataView.swift */,
 				7F737EDF2716705B003D0BBF /* SettingView.swift */,
-				7F51A74D271D397700E32395 /* ItemDB.swift */,
-				7F51A74F271D457B00E32395 /* Item.swift */,
-				7F51A751271D459000E32395 /* ItemStore.swift */,
-				7F51A753271D480700E32395 /* ItemListView.swift */,
-				7F51A759271D600B00E32395 /* ItemView.swift */,
-				7F51A757271D593800E32395 /* ItemRowView.swift */,
-				7F51A755271D4EDD00E32395 /* SceneDelegate.swift */,
 				7F1C4C3F2714152400CCDCC0 /* RecordView.swift */,
 				7F8187E427191F7100137133 /* SubjectView.swift */,
-				7FE7DD67271AF77200C1E2DD /* SubjectColorView.swift */,
-				7F8A0704271536190067DC01 /* ButtonsView.swift */,
-				7F1C4C4127141BCE00CCDCC0 /* TimerView.swift */,
-				7F8A07062715364E0067DC01 /* Data.swift */,
-				7F8A07082715365D0067DC01 /* MainView.swift */,
-				7F8A070A271536760067DC01 /* Persistence.swift */,
-				7F8A070C271536810067DC01 /* PickerView.swift */,
-				7F8A070E271536920067DC01 /* ProgressBarView.swift */,
-				7F8A0716271537370067DC01 /* SoundListView.swift */,
-				7F8A0718271537600067DC01 /* TimeManager.swift */,
-				7F8A071A2715376D0067DC01 /* TimerManager.swift */,
-				7F8A071C2715378E0067DC01 /* TimerMainView.swift */,
+				7F23A5EF2720F16C00877990 /* CloseKeyboard.swift */,
+				7F23A5F12720FC8000877990 /* Timer */,
 				7F8A072427155ECB0067DC01 /* Info.plist */,
-				7F737EDC27156786003D0BBF /* Qiita_Timer.xcdatamodeld */,
+				7F737EDC27156786003D0BBF /* Timer.xcdatamodeld */,
 				7F408436270AC74000AC9324 /* Assets.xcassets */,
 				7F408438270AC74000AC9324 /* Preview Content */,
 			);
@@ -160,7 +135,6 @@
 		CC884A2CC6A1686B951DBE2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1251C5A75036E8F9AF878225 /* Pods_Study.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,17 +146,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F40843E270AC74000AC9324 /* Build configuration list for PBXNativeTarget "Study" */;
 			buildPhases = (
-				F45D6B98B3969630A3F040A3 /* [CP] Check Pods Manifest.lock */,
 				7F40842B270AC73C00AC9324 /* Sources */,
 				7F40842C270AC73C00AC9324 /* Frameworks */,
 				7F40842D270AC73C00AC9324 /* Resources */,
-				F7EE58159FF4C10E8A4E3130 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Study;
+			packageProductDependencies = (
+			);
 			productName = Study;
 			productReference = 7F40842F270AC73C00AC9324 /* Study.app */;
 			productType = "com.apple.product-type.application";
@@ -210,6 +184,8 @@
 				Base,
 			);
 			mainGroup = 7F408426270AC73C00AC9324;
+			packageReferences = (
+			);
 			productRefGroup = 7F408430270AC73C00AC9324 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,48 +207,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		F45D6B98B3969630A3F040A3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Study-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7EE58159FF4C10E8A4E3130 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Study/Pods-Study-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Study/Pods-Study-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Study/Pods-Study-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7F40842B270AC73C00AC9324 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,28 +216,22 @@
 				7F1C4C4427141BDB00CCDCC0 /* DataView.swift in Sources */,
 				7F1C4C4227141BCE00CCDCC0 /* TimerView.swift in Sources */,
 				7F8A0717271537370067DC01 /* SoundListView.swift in Sources */,
-				7F51A750271D457B00E32395 /* Item.swift in Sources */,
 				7F8A07092715365D0067DC01 /* MainView.swift in Sources */,
-				7F51A752271D459000E32395 /* ItemStore.swift in Sources */,
 				7F408435270AC73C00AC9324 /* ContentView.swift in Sources */,
 				7F8A071D2715378E0067DC01 /* TimerMainView.swift in Sources */,
-				7F51A75A271D600B00E32395 /* ItemView.swift in Sources */,
 				7F8187E527191F7100137133 /* SubjectView.swift in Sources */,
-				7F51A754271D480700E32395 /* ItemListView.swift in Sources */,
-				7F737EDE27156786003D0BBF /* Qiita_Timer.xcdatamodeld in Sources */,
+				7F737EDE27156786003D0BBF /* Timer.xcdatamodeld in Sources */,
 				7F1C4C402714152400CCDCC0 /* RecordView.swift in Sources */,
 				7F737EE02716705B003D0BBF /* SettingView.swift in Sources */,
-				7F51A758271D593800E32395 /* ItemRowView.swift in Sources */,
 				7F8A070D271536810067DC01 /* PickerView.swift in Sources */,
 				7F8A0705271536190067DC01 /* ButtonsView.swift in Sources */,
-				7FE7DD68271AF77200C1E2DD /* SubjectColorView.swift in Sources */,
-				7F51A74E271D397700E32395 /* ItemDB.swift in Sources */,
+				7F23A5F02720F16C00877990 /* CloseKeyboard.swift in Sources */,
 				7F8A0719271537600067DC01 /* TimeManager.swift in Sources */,
+				7F23A60A27229F5500877990 /* SceneDelegate.swift in Sources */,
 				7F8A07072715364E0067DC01 /* Data.swift in Sources */,
 				7F8A070F271536920067DC01 /* ProgressBarView.swift in Sources */,
 				7F408433270AC73C00AC9324 /* StudyApp.swift in Sources */,
 				7F8A071B2715376D0067DC01 /* TimerManager.swift in Sources */,
-				7F51A756271D4EDD00E32395 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +293,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,6 +348,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -428,7 +358,6 @@
 		};
 		7F40843F270AC74000AC9324 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE721E18ED27D288DF633F98 /* Pods-Study.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,7 +383,6 @@
 		};
 		7F408440270AC74000AC9324 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 882D40AD4E4381A07BD5400B /* Pods-Study.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,14 +430,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7F737EDC27156786003D0BBF /* Qiita_Timer.xcdatamodeld */ = {
+		7F737EDC27156786003D0BBF /* Timer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				7F737EDD27156786003D0BBF /* Qiita_Timer.xcdatamodel */,
 			);
 			currentVersion = 7F737EDD27156786003D0BBF /* Qiita_Timer.xcdatamodel */;
-			name = Qiita_Timer.xcdatamodeld;
-			path = "../../../../../../Downloads/Qiita_Timer-main/Qiita_Timer/Qiita_Timer.xcdatamodeld";
+			name = Timer.xcdatamodeld;
+			path = "../../../../../../Downloads/Qiita_Timer-main/Qiita_Timer/Timer.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

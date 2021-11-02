@@ -18,3 +18,9 @@ struct Sound: Identifiable {
     let id: SystemSoundID
     let soundName: String
 }
+
+struct DataModel: Identifiable {
+    let id = UUID()
+    let name: String
+    var subItems: [DataModel]?
+}

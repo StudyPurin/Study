@@ -39,6 +39,7 @@ struct PickerView: View {
                 .frame(width: self.screenWidth * 0.1, height: self.screenWidth * 0.4)
                 //上のframeでクリップし、フレームからはみ出す部分は非表示にする
                 .clipped()
+                .compositingGroup()
                 //時間単位を表すテキスト
                 Text("hour")
                     .font(.headline)
@@ -53,6 +54,7 @@ struct PickerView: View {
                 .pickerStyle(WheelPickerStyle())
                 .frame(width: self.screenWidth * 0.1, height: self.screenWidth * 0.4)
                 .clipped()
+                .compositingGroup()
                 //分単位を表すテキスト
                 Text("min")
                     .font(.headline)
@@ -67,6 +69,7 @@ struct PickerView: View {
                 .pickerStyle(WheelPickerStyle())
                 .frame(width:self.screenWidth * 0.1, height: self.screenWidth * 0.4)
                 .clipped()
+                .compositingGroup()
                 //秒単位を表すテキスト
                 Text("sec")
                     .font(.headline)

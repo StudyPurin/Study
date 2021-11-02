@@ -31,6 +31,7 @@ struct ButtonsView: View {
                     }
                 }
             
+            
             //ボタンとボタンの間隔をあける
             Spacer()
             

@@ -9,10 +9,25 @@ import SwiftUI
 
 struct RecordView: View {
     @ObservedObject var timeManager: TimeManager = .shared
-    @State var recordTimer: Int = 0
+    @State var editMode: EditMode = .inactive
 
     var body: some View {
-        Text("ff")
+        List{
+            ForEach(0..<self.timeManager.addText.count, id: \.self) { index in
+                HStack {
+                    Text(self.timeManager.addText[index])
+                }
+            }
+            .onDelete(perform: editMode.isEditing ? rowRemove : nil)
+        }
+        .toolbar {
+            EditButton()
+        }
+        .environment(\.editMode, $editMode)
+    }
+    func rowRemove(offsets: IndexSet) {
+        self.timeManager.addText.remove(atOffsets: offsets)
+        UserDefaults.standard.setValue(self.timeManager.addText, forKey: "TODO")
     }
 }
 

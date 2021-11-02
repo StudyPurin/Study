@@ -12,16 +12,37 @@ class TimeManager: ObservableObject {
     private init() { }
     
     static let shared = TimeManager()
+    @Published var selectionDate = Date()
     //Pickerで設定した"時間"を格納する変数
     @Published var hourSelection: Int = 0
     //Pickerで設定した"分"を格納する変数
     @Published var minSelection: Int = 0
+    //Pickerで設定した"時間"を格納する変数
+    @Published var hourSelection2: Int = 0
+    //Pickerで設定した"分"を格納する変数
+    @Published var minSelection2: Int = 0
+    //Pickerで設定した"時間"を格納する変数
+    @Published var hourSelection3: Int = 0
+    //DataViewで表示する時間
+    @Published var hourStudy: [Int] = []
+    //DataViewで表示する分
+    @Published var minStudy: [Int] = []
+    //DataViewで表示する日にち
+    @Published var dateStudy: [Date] = []
+    //DateViewで表示するメモ
+    @Published var memoStudy: [String] = []
+    //DataViewで表示する科目
+    @Published var subjectStudy: [String] = []
+    //Pickerで設定した"分"を格納する変数
+    @Published var minSelection3: Int = 0
     //Pickerで設定した"秒"を格納する変数
     @Published var secSelection: Int = 0
     //カウントダウン残り時間
     @Published var duration: Double = 0
     //カウントダウン開始前の最大時間
     @Published var maxValue: Double = 0
+    //経過した時間を計算して格納する変数
+    @Published var timeValue: Double = 0
     //タイマーのステータス
     @Published var timerStatus: TimerStatus = .stopped
     //AudioToolboxに格納された音源を利用するためのデータ型でデフォルトのサウンドIDを格納
@@ -30,6 +51,8 @@ class TimeManager: ObservableObject {
     @Published var soundName: String = "Beat"
     
     @Published var addText: [String] = []
+    
+    @Published var addSubject: [(date_study: Date, time_study: Int, memo_study: String)] = []
     //アラーム音オン/オフの設定
     @Published var isAlarmOn: Bool = true
     //バイブレーションオン/オフの設定
@@ -40,6 +63,10 @@ class TimeManager: ObservableObject {
     @Published var isEffectAnimationOn: Bool = true
     //設定画面の表示/非表示
     @Published var isSetting: Bool = false
+    //総勉強時間
+    @Published var studyTime: Double = 0
+    //科目ごとに記録するための変数
+    @Published var subjectNum: String = ""
     //1秒ごとに発動するTimerクラスのpublishメソッド
     var timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
     
@@ -68,6 +95,7 @@ class TimeManager: ObservableObject {
     func start() {
         //タイマーステータスを.runningにする
         timerStatus = .running
+        
     }
     
     //一時停止ボタンをタップしたときに発動するメソッド
@@ -82,5 +110,6 @@ class TimeManager: ObservableObject {
         timerStatus = .stopped
         //残り時間がまだ0でなくても強制的に0にする
         duration = 0
+        maxValue = 0
     }
 }
