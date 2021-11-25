@@ -367,8 +367,8 @@
 				DEVELOPMENT_TEAM = UK3QAQ2MSD;
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_FILE = "/Users/cmstudent/Documents/授業/iosプログラミング/iOS1/Study/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,8 +392,8 @@
 				DEVELOPMENT_TEAM = UK3QAQ2MSD;
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_FILE = "/Users/cmstudent/Documents/授業/iosプログラミング/iOS1/Study/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -104,11 +104,12 @@ struct FouthView: View {
     var body: some View {
         SettingView()
     }
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-                .environment(\.locale, Locale(identifier: "ja_JP"))
-        }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environment(\.locale, Locale(identifier: "ja_JP"))
     }
 }
 
