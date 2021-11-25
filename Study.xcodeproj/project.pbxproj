@@ -12,11 +12,11 @@
 		7F1C4C4427141BDB00CCDCC0 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C4C4327141BDB00CCDCC0 /* DataView.swift */; };
 		7F23A5F02720F16C00877990 /* CloseKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23A5EF2720F16C00877990 /* CloseKeyboard.swift */; };
 		7F23A60A27229F5500877990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23A60927229F5500877990 /* SceneDelegate.swift */; };
+		7F27FBA9274F39D2004C127A /* Timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F27FBA7274F39D2004C127A /* Timer.xcdatamodeld */; };
 		7F408433270AC73C00AC9324 /* StudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F408432270AC73C00AC9324 /* StudyApp.swift */; };
 		7F408435270AC73C00AC9324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F408434270AC73C00AC9324 /* ContentView.swift */; };
 		7F408437270AC74000AC9324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F408436270AC74000AC9324 /* Assets.xcassets */; };
 		7F40843A270AC74000AC9324 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F408439270AC74000AC9324 /* Preview Assets.xcassets */; };
-		7F737EDE27156786003D0BBF /* Timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F737EDC27156786003D0BBF /* Timer.xcdatamodeld */; };
 		7F737EE02716705B003D0BBF /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F737EDF2716705B003D0BBF /* SettingView.swift */; };
 		7F8187E527191F7100137133 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8187E427191F7100137133 /* SubjectView.swift */; };
 		7F8A0705271536190067DC01 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A0704271536190067DC01 /* ButtonsView.swift */; };
@@ -37,12 +37,13 @@
 		7F1C4C4327141BDB00CCDCC0 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		7F23A5EF2720F16C00877990 /* CloseKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseKeyboard.swift; sourceTree = "<group>"; };
 		7F23A60927229F5500877990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F27FBA8274F39D2004C127A /* Timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Timer.xcdatamodel; sourceTree = "<group>"; };
+		7F27FBAA274F3AC7004C127A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F40842F270AC73C00AC9324 /* Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F408432270AC73C00AC9324 /* StudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyApp.swift; sourceTree = "<group>"; };
 		7F408434270AC73C00AC9324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F408436270AC74000AC9324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F408439270AC74000AC9324 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7F737EDD27156786003D0BBF /* Qiita_Timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qiita_Timer.xcdatamodel; sourceTree = "<group>"; };
 		7F737EDF2716705B003D0BBF /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		7F8187E427191F7100137133 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		7F8A0704271536190067DC01 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		7F8A0718271537600067DC01 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		7F8A071A2715376D0067DC01 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		7F8A071C2715378E0067DC01 /* TimerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMainView.swift; sourceTree = "<group>"; };
-		7F8A072427155ECB0067DC01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +116,8 @@
 				7F8187E427191F7100137133 /* SubjectView.swift */,
 				7F23A5EF2720F16C00877990 /* CloseKeyboard.swift */,
 				7F23A5F12720FC8000877990 /* Timer */,
-				7F8A072427155ECB0067DC01 /* Info.plist */,
-				7F737EDC27156786003D0BBF /* Timer.xcdatamodeld */,
+				7F27FBA7274F39D2004C127A /* Timer.xcdatamodeld */,
+				7F27FBAA274F3AC7004C127A /* Info.plist */,
 				7F408436270AC74000AC9324 /* Assets.xcassets */,
 				7F408438270AC74000AC9324 /* Preview Content */,
 			);
@@ -219,8 +219,8 @@
 				7F8A07092715365D0067DC01 /* MainView.swift in Sources */,
 				7F408435270AC73C00AC9324 /* ContentView.swift in Sources */,
 				7F8A071D2715378E0067DC01 /* TimerMainView.swift in Sources */,
+				7F27FBA9274F39D2004C127A /* Timer.xcdatamodeld in Sources */,
 				7F8187E527191F7100137133 /* SubjectView.swift in Sources */,
-				7F737EDE27156786003D0BBF /* Timer.xcdatamodeld in Sources */,
 				7F1C4C402714152400CCDCC0 /* RecordView.swift in Sources */,
 				7F737EE02716705B003D0BBF /* SettingView.swift in Sources */,
 				7F8A070D271536810067DC01 /* PickerView.swift in Sources */,
@@ -430,14 +430,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7F737EDC27156786003D0BBF /* Timer.xcdatamodeld */ = {
+		7F27FBA7274F39D2004C127A /* Timer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7F737EDD27156786003D0BBF /* Qiita_Timer.xcdatamodel */,
+				7F27FBA8274F39D2004C127A /* Timer.xcdatamodel */,
 			);
-			currentVersion = 7F737EDD27156786003D0BBF /* Qiita_Timer.xcdatamodel */;
-			name = Timer.xcdatamodeld;
-			path = "../../../../../../Downloads/Qiita_Timer-main/Qiita_Timer/Timer.xcdatamodeld";
+			currentVersion = 7F27FBA8274F39D2004C127A /* Timer.xcdatamodel */;
+			path = Timer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
